@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    Bird.set(LedSpriteProperty.Y, -1)
+    Bird.change(LedSpriteProperty.Y, -1)
 })
 input.onButtonPressed(Button.B, function () {
     Bird.change(LedSpriteProperty.Y, 1)
