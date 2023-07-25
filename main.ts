@@ -7,12 +7,15 @@ input.onButtonPressed(Button.B, function () {
 let emptyobstaclesY = 0
 let Ticks = 0
 let Bird: game.LedSprite = null
-game.setScore(0)
+let Score = 0
 let Index = 0
 let Obstacles: game.LedSprite[] = []
 Bird = game.createSprite(0, 2)
 Bird.set(LedSpriteProperty.Blink, 300)
 loops.everyInterval(600, function () {
+	
+})
+loops.everyInterval(500, function () {
 	
 })
 basic.forever(function () {
@@ -32,9 +35,22 @@ basic.forever(function () {
     }
     for (let obstacles3 of Obstacles) {
         if (obstacles3.get(LedSpriteProperty.X) == Bird.get(LedSpriteProperty.X) && obstacles3.get(LedSpriteProperty.Y) == Bird.get(LedSpriteProperty.Y)) {
+            basic.showString(" Score=")
+            basic.showNumber(Score)
             game.gameOver()
         }
     }
     Ticks += 1
     basic.pause(600)
+})
+basic.forever(function () {
+	
+})
+basic.forever(function () {
+    for (let obstacles3 of Obstacles) {
+        if (obstacles3.get(LedSpriteProperty.X) == Bird.get(LedSpriteProperty.X)) {
+            basic.pause(2200)
+            Score += 1
+        }
+    }
 })
