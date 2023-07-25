@@ -30,6 +30,7 @@ basic.forever(function () {
     }
     for (let obstacles3 of Obstacles) {
         if (obstacles3.get(LedSpriteProperty.X) == Bird.get(LedSpriteProperty.X) && obstacles3.get(LedSpriteProperty.Y) == Bird.get(LedSpriteProperty.Y)) {
+            music.stopAllSounds()
             basic.showNumber(Score)
             game.gameOver()
         }
