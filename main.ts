@@ -45,7 +45,7 @@ basic.forever(function () {
 basic.forever(function () {
     for (let obstacles3 of Obstacles) {
         if (obstacles3.get(LedSpriteProperty.X) == Bird.get(LedSpriteProperty.X)) {
-            basic.pause(2400)
+            basic.pause(1200)
             Score += 1
         }
     }
