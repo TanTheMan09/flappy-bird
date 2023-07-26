@@ -4,6 +4,9 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     Bird.change(LedSpriteProperty.Y, 1)
 })
+input.onGesture(Gesture.Shake, function () {
+    music.stopAllSounds()
+})
 let emptyobstaclesY = 0
 let Ticks = 0
 let Bird: game.LedSprite = null
