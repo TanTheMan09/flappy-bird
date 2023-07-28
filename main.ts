@@ -2,13 +2,10 @@ input.onButtonPressed(Button.A, function () {
     Bird.change(LedSpriteProperty.Y, -1)
 })
 input.onButtonPressed(Button.AB, function () {
-    music.play(music.stringPlayable("G F G A - F E D ", 180), music.PlaybackMode.LoopingInBackground)
+    music.stopAllSounds()
 })
 input.onButtonPressed(Button.B, function () {
     Bird.change(LedSpriteProperty.Y, 1)
-})
-input.onGesture(Gesture.Shake, function () {
-    music.stopAllSounds()
 })
 let emptyobstaclesY = 0
 let Ticks = 0
