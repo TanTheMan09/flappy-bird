@@ -27,7 +27,7 @@ basic.forever(function () {
         emptyobstaclesY = randint(0, 4)
         for (let Index2 = 0; Index2 <= 4; Index2++) {
             if (Index2 != emptyobstaclesY) {
-                Obstacles.push(game.createSprite(2, Index2))
+                Obstacles.push(game.createSprite(4, Index2))
             }
         }
     }
